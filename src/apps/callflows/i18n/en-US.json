@@ -1103,6 +1103,9 @@
 			"blacklist": {
 				"title": "Blacklists"
 			},
+			"lists": {
+				"title": "Lists"
+			},
 			"preflow": {
 				"title": "Preflow",
 				"help": "Preflow is an option to execute a callflow before any other callflow. It is set on the account level and will apply on any call using callflow for that account. It can be useful to activate call recording, or the missed call alert feature for example.",
@@ -1207,6 +1210,17 @@
 			"listNumbers": "List of existing numbers",
 			"are_you_sure_you_want_to_delete": "Are you sure you want to delete this blacklist?",
 			"help": "In order to activate this blacklist, head to the Account Settings section"
+		},
+		"lists": {
+			"title": "Lists",
+			"addNumber": "Add Number",
+			"create": "Create List",
+			"edit": "Edit List",
+			"deleteList": "Delete List",
+			"name": "Name",
+			"listNumbers": "Entries:",
+			"are_you_sure_you_want_to_delete": "Are you sure you want to delete this list? (All entries will also be removed.)",
+			"help": "You can use this list for CID matching in a callflow."
 		},
 
 		"__comment": "UI-2216: adding tts to adv. callflows",
