@@ -364,6 +364,7 @@
 #ws_callflow .children > .child > .span_arrow.small,
 .callflow-preview .children > .child > .span_arrow.small {
 	height: 31px;
+	width: 100px;
 	background-image: url(static/images/center_arrow.png);
 }
 
@@ -690,6 +691,7 @@
 .callflow-preview .branch {
 	display: block;
 	text-align: center;
+	padding: 0px 1px;
 }
 
 #ws_callflow .node.active,
