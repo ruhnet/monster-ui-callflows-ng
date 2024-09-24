@@ -364,7 +364,7 @@
 #ws_callflow .children > .child > .span_arrow.small,
 .callflow-preview .children > .child > .span_arrow.small {
 	height: 31px;
-	width: 100px;
+	width: 100%;
 	background-image: url(static/images/center_arrow.png);
 }
 
