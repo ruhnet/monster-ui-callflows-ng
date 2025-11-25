@@ -259,6 +259,20 @@
 			"dead_air": "Dead Air",
 			"tooltip": "Answers the call and switches media off. Could be useful for external calls/conferences recording over inbound leg."
 		},
+		"destination_list_match": {
+			"destination_list_match": "Destination List Match",
+			"tooltip": "Handles inspection of destination number and branches to a child callflow node accordingly",
+			"edit_dialog": {
+				"title": "Destination List Match",
+				"id": "Destination List ID"
+			},
+			"menu_option_dialog": {
+				"title": "Menu option",
+				"menu_option": "Menu option",
+				"match": "Match",
+				"no_match": "No match"
+			}
+		},
 		"device": {
 			"device": "Device",
 			"device_tip": "Ring a VoIP or cell phone or other device",

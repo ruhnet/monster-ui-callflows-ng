@@ -11,6 +11,7 @@ define(function(require) {
 		'callcenter',
 		'checkcid',
 		'cidlistmatch',
+		'destination_listmatch',
 		'conference',
 		'device',
 		'directory',
