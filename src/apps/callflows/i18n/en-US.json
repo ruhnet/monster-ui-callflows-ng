@@ -364,6 +364,8 @@
 			"emergency": "Emergency",
 			"caller_id_name_data_content3": "Define the Caller ID Name of this Device for Emergency Calls (max. 30 chars).",
 			"caller_id_number_data_content3": "Define the Caller ID Number of this Device for Emergency Calls.",
+			"caller_id_passthrough": "Caller ID Passthrough",
+			"caller_id_passthrough_data_content": "Use the Caller ID sent from the device (this will override Caller ID set elsewhere).",
 			"music_on_hold": "Music on Hold",
 			"music_on_hold_data_content": "Select the media file that you want to be played by default when it's not set on a user or a device.",
 			"secure_rtp": "Secure RTP",

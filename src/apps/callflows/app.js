@@ -2519,7 +2519,7 @@ define(function(require) {
 				if (_.isPlainObject(value)) {
 					self.compactObject(value);
 				}
-				if (_.isEmpty(value)) {
+				if (_.isEmpty(value) && !_.isBoolean(value) && !_.isNumber(value)) {
 					_.unset(obj, key);
 				}
 			});

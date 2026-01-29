@@ -37,11 +37,11 @@
 							<div class="input">
 								<span rel="popover" data-content="{{ i18n.callflows.device.belongs_to_data_content }}">
 									<select name="owner_id" id="owner_id" class="medium">
-									{{#select data.owner_id}}
-										{{#each field_data.users}}
-											<option value="{{ id }}" id="{{ id }}">{{ first_name }} {{ last_name }}</option>
-										{{/each}}
-									{{/select}}
+										{{#select data.owner_id}}
+											{{#each field_data.users}}
+												<option value="{{ id }}" id="{{ id }}">{{ first_name }} {{ last_name }}</option>
+											{{/each}}
+										{{/select}}
 									</select>
 									<div class="edit_create">
 										<a id="edit_link"  class="inline_action" data-action="edit" href="#">{{ i18n.callflows.device.edit }}</a>
@@ -157,6 +157,20 @@
 							<input class="span4" id="caller_id_number_external" name="caller_id.external.number" type="text" placeholder="+15555555555" value="{{ data.caller_id.external.number }}" rel="popover" data-content="{{ i18n.callflows.device.caller_id_number_data_content2 }}" data-mask="phoneNumber" />
 						</div>
 					</div>
+
+					<div class="input">
+						<ul class="inputs-list">
+							<li>
+								<label>
+									<span rel="popover" data-content="{{ i18n.callflows.device.caller_id_passthrough_data_content }}">
+										<input type="checkbox" name="caller_id.external.passthrough"{{#if data.caller_id.external.passthrough}} checked="checked"{{/if}} />
+										<span>{{ i18n.callflows.device.caller_id_passthrough }}</span>
+									</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+
 					<hr />
 
 					<h3>{{ i18n.callflows.device.emergency }}</h3>

@@ -892,6 +892,10 @@ define(function(require) {
 
 			self.compactObject(data.caller_id);
 
+			if (_.has(data, ['caller_id', 'external', 'passthrough']) && data.caller_id.external.passthrough === false) {
+				delete data.caller_id.external.passthrough;
+			}
+
 			if (_.isEmpty(data.caller_id)) {
 				delete data.caller_id;
 			}
