@@ -36,6 +36,9 @@ define(function(require) {
 					isUsable: 'true',
 					weight: 48,
 					caption: function(node, caption_map) {
+						if (_.has(node, ['data', 'data', 'id'])) {
+							return caption_map[node.data.data.id].name;
+						}
 						return '';
 					},
 					edit: function(node, callback) {
@@ -112,7 +115,10 @@ define(function(require) {
 				$dialog.find('.js-save').click(function() {
 					var $selectedOption = $('#cid-list-match_id option:selected');
 					var listId = $selectedOption.val();
+					var listName = _.find(lists, { id: listId }).name;
 
+					node.caption = listName;
+					node.setMetadata('caption', listName);
 					node.setMetadata('id', listId);
 					if (typeof callback === 'function') {
 						callback();
