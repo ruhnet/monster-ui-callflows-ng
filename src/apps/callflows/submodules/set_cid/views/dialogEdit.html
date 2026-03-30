@@ -1,0 +1,38 @@
+<div class="dialog_popup callflows-port set-cid-dialog js-set-cid-dialog">
+	<form method="post" action="#" class="set-cid-form js-set-cid-form">
+		<div class="form_content">
+			<div class="popup_field clear">
+				<label for="set-cid_name">
+					{{ i18n.callflows.set_cid.edit_dialog.caller_id_name }}
+					<i class="help-popover fa fa-question-circle"
+					   data-original-title="{{ i18n.callflows.set_cid.edit_dialog.caller_id_name_tooltip}}"
+					   data-placement="right"
+					   data-toggle="tooltip"></i>
+				</label>
+				<div class="field_wrapper">
+					<input name="caller_id_name" type="text" value="{{ caller_id_name }}" id="set-cid_caller_id_name"/>
+				</div>
+			</div>
+
+			<div class="popup_field clear">
+				<label for="set-cid_number">
+					{{ i18n.callflows.set_cid.edit_dialog.caller_id_number }}
+					<i class="help-popover fa fa-question-circle"
+					   data-original-title="{{ i18n.callflows.set_cid.edit_dialog.caller_id_number_tooltip}}"
+					   data-placement="right"
+					   data-toggle="tooltip"></i>
+				</label>
+				<div class="field_wrapper">
+					<input name="caller_id_number" type="text" value="{{ caller_id_number }}" id="set-cid_caller_id_number"/>
+				</div>
+			</div>
+
+		</div>
+	</form>
+
+	<div class="buttons-center">
+		<button class="monster-button monster-button-primary js-save">
+			{{ i18n.save }}
+		</button>
+	</div>
+</div>

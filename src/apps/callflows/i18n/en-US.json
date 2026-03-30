@@ -742,6 +742,17 @@
 			"use_carriers_from_specific_account": "Use carriers from a specific account",
 			"account_id": "Account ID"
 		},
+		"set_cid": {
+			"set_cid": "Set Caller ID",
+			"tooltip": "Sets caller ID for the call",
+			"edit_dialog": {
+				"title": "Set Caller ID",
+				"caller_id_name_tooltip": "The caller ID name to set",
+				"caller_id_name": "Name",
+				"caller_id_number": "Number",
+				"caller_id_number_tooltip": "The caller ID number to set"
+			}
+		},
 		"set_variable": {
 			"set_variable": "Set variable",
 			"tooltip": "Sets a variable on the current leg",
